@@ -12,6 +12,13 @@ Reusable tooling plugin for Claude Code. Provides implementation skills for buil
 | `pipeline` | Chain multiple operations in multi-step workflows |
 | `justfile-designer` | Generate, enhance, and audit justfiles for any project |
 
+## Commands
+
+| Command | Purpose |
+|---------|---------|
+| `/build-tool` | Build a new reusable tool (CLI, MCP, justfile, pipeline, script) and register it |
+| `/tool-index` | Manage per-project tool index and global tool catalog |
+
 ## Installation
 
 ```bash

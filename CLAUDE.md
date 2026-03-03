@@ -5,6 +5,7 @@
 ## Structure
 
 - `commands/` — Slash commands
+  - `build-tool.md` — Build a new reusable tool and register it in the tool index
   - `tool-index.md` — Manage per-project tool index and global tool catalog
 - `hooks/` — Event hooks
   - `skill-rules.json` — Skill discovery triggers for tooling skills
