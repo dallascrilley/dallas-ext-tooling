@@ -4,6 +4,10 @@
 
 ## Structure
 
+- `commands/` — Slash commands
+  - `tool-index.md` — Manage per-project tool index and global tool catalog
+- `hooks/` — Event hooks
+  - `skill-rules.json` — Skill discovery triggers for tooling skills
 - `skills/` — Implementation skills for tool building
   - `create-cli/` — CLI design and UX (language-agnostic surface area)
   - `dc-cli-kit/` — TypeScript CLI implementation with dc-cli-kit framework

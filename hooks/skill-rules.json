@@ -1,0 +1,92 @@
+{
+  "version": "2.0",
+  "skills": {
+    "tool-index": {
+      "description": "Search and manage the project tool index and global tool catalog",
+      "priority": 7,
+      "triggers": {
+        "keywords": ["tool index", "what tools do we have", "have we built", "existing tools", "list tools", "find tool"],
+        "keywordPatterns": ["tool.*index", "existing.*tool", "list.*tool", "find.*tool", "what.*tool.*have"],
+        "intentPatterns": [
+          "(?:what|which|any).*(?:tool|cli|mcp).*(?:built|created|exist|have|available)",
+          "(?:search|find|look for|discover).*(?:tool|cli|mcp|script)",
+          "(?:list|show|display).*(?:tool|cli|mcp).*(?:index|catalog|registry)",
+          "(?:have we|did we|already).*(?:built|created|made).*(?:tool|cli|mcp)"
+        ]
+      }
+    },
+    "building-reusable-tools": {
+      "description": "Decide when to build a reusable tool vs one-off code",
+      "priority": 6,
+      "triggers": {
+        "keywords": ["build a tool", "make reusable", "automate this", "create a cli", "build an mcp"],
+        "keywordPatterns": ["build.*tool", "make.*reusable", "automate.*this", "create.*cli", "build.*mcp"],
+        "intentPatterns": [
+          "(?:build|create|make|write).*(?:reusable|tool|cli|command)",
+          "(?:automate|script).*(?:this|workflow|process|task)",
+          "(?:should.*be|turn.*into).*(?:tool|cli|reusable)"
+        ]
+      }
+    },
+    "create-cli": {
+      "description": "Design CLI surface area and UX patterns",
+      "priority": 6,
+      "triggers": {
+        "keywords": ["design cli", "cli surface", "cli ux", "command interface"],
+        "keywordPatterns": ["design.*cli", "cli.*surface", "cli.*ux", "command.*interface"],
+        "intentPatterns": [
+          "(?:design|plan|architect).*(?:cli|command.*line).*(?:interface|surface|ux)",
+          "(?:cli|command).*(?:design|structure|layout|subcommand)"
+        ]
+      }
+    },
+    "dc-cli-kit": {
+      "description": "Build TypeScript CLIs with dc-cli-kit framework",
+      "priority": 6,
+      "triggers": {
+        "keywords": ["dc-cli-kit", "typescript cli", "ts cli framework"],
+        "keywordPatterns": ["dc-cli-kit", "typescript.*cli", "ts.*cli.*framework"],
+        "intentPatterns": [
+          "(?:build|create|implement).*(?:typescript|ts).*cli",
+          "(?:use|with).*dc-cli-kit"
+        ]
+      }
+    },
+    "mcporter": {
+      "description": "MCP server interaction and codegen via mcporter CLI",
+      "priority": 6,
+      "triggers": {
+        "keywords": ["mcporter", "mcp server codegen", "generate mcp"],
+        "keywordPatterns": ["mcporter", "mcp.*codegen", "generate.*mcp"],
+        "intentPatterns": [
+          "(?:build|create|generate|scaffold).*mcp.*server",
+          "(?:use|run).*mcporter"
+        ]
+      }
+    },
+    "pipeline": {
+      "description": "Multi-step workflow orchestration pipelines",
+      "priority": 6,
+      "triggers": {
+        "keywords": ["build pipeline", "workflow orchestration", "multi-step workflow"],
+        "keywordPatterns": ["build.*pipeline", "workflow.*orchestrat", "multi-step.*workflow"],
+        "intentPatterns": [
+          "(?:build|create|design).*(?:pipeline|workflow|orchestrat)",
+          "(?:chain|compose|sequence).*(?:tool|step|task)"
+        ]
+      }
+    },
+    "justfile-designer": {
+      "description": "Design and generate justfile task runners",
+      "priority": 6,
+      "triggers": {
+        "keywords": ["justfile", "just recipe", "task runner justfile"],
+        "keywordPatterns": ["justfile", "just.*recipe", "task.*runner.*just"],
+        "intentPatterns": [
+          "(?:create|design|generate|add).*(?:justfile|just.*recipe)",
+          "(?:justfile|just).*(?:recipe|task|target)"
+        ]
+      }
+    }
+  }
+}
