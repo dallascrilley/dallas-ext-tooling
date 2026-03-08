@@ -1,33 +1,6 @@
 {
   "version": "2.0",
   "skills": {
-    "tool-index": {
-      "description": "Search and manage the project tool index and global tool catalog",
-      "priority": 7,
-      "triggers": {
-        "keywords": ["tool index", "what tools do we have", "have we built", "existing tools", "list tools", "find tool"],
-        "keywordPatterns": ["tool.*index", "existing.*tool", "list.*tool", "find.*tool", "what.*tool.*have"],
-        "intentPatterns": [
-          "(?:what|which|any).*(?:tool|cli|mcp).*(?:built|created|exist|have|available)",
-          "(?:search|find|look for|discover).*(?:tool|cli|mcp|script)",
-          "(?:list|show|display).*(?:tool|cli|mcp).*(?:index|catalog|registry)",
-          "(?:have we|did we|already).*(?:built|created|made).*(?:tool|cli|mcp)"
-        ]
-      }
-    },
-    "building-reusable-tools": {
-      "description": "Decide when to build a reusable tool vs one-off code",
-      "priority": 6,
-      "triggers": {
-        "keywords": ["build a tool", "make reusable", "automate this", "create a cli", "build an mcp"],
-        "keywordPatterns": ["build.*tool", "make.*reusable", "automate.*this", "create.*cli", "build.*mcp"],
-        "intentPatterns": [
-          "(?:build|create|make|write).*(?:reusable|tool|cli|command)",
-          "(?:automate|script).*(?:this|workflow|process|task)",
-          "(?:should.*be|turn.*into).*(?:tool|cli|reusable)"
-        ]
-      }
-    },
     "create-cli": {
       "description": "Design CLI surface area and UX patterns",
       "priority": 6,
