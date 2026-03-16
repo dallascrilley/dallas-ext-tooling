@@ -1,22 +1,11 @@
 {
   "name": "dallas-ext-tooling",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Reusable tooling plugin for Claude Code. Skills for building CLIs, MCP servers, pipelines, and task runners.",
   "author": {
     "name": "Dallas Crilley"
   },
   "repository": "https://github.com/dallascrilley/dallas-ext-tooling",
   "license": "MIT",
-  "keywords": ["cli", "mcp", "tooling", "pipeline", "justfile"],
-  "skills": [
-    { "name": "create-cli", "path": "skills/create-cli/SKILL.md" },
-    { "name": "dc-cli-kit", "path": "skills/dc-cli-kit/SKILL.md" },
-    { "name": "justfile-designer", "path": "skills/justfile-designer/SKILL.md" },
-    { "name": "mcporter", "path": "skills/mcporter/SKILL.md" },
-    { "name": "pipeline", "path": "skills/pipeline/SKILL.md" },
-    { "name": "ast-grep", "path": "skills/ast-grep/SKILL.md" },
-    { "name": "ast-grep-rule-discovery", "path": "skills/ast-grep-rule-discovery/SKILL.md" },
-    { "name": "coding-agent", "path": "skills/coding-agent/SKILL.md" },
-    { "name": "openai-docs", "path": "skills/openai-docs/SKILL.md" }
-  ]
+  "keywords": ["cli", "mcp", "tooling", "pipeline", "justfile"]
 }
